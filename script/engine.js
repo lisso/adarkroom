@@ -133,11 +133,11 @@
 				});
 			}
 
-			$('<span>')
-				.addClass('appStore menuBtn')
-				.text(_('get the app.'))
-				.click(Engine.getApp)
-				.appendTo(menu);
+			// $('<span>')
+			// 	.addClass('appStore menuBtn')
+			// 	.text(_('get the app.'))
+			// 	.click(Engine.getApp)
+			// 	.appendTo(menu);
 
 			$('<span>')
 				.addClass('lightsOff menuBtn')
@@ -179,11 +179,11 @@
 					.appendTo(menu);
 			}
 
-			$('<span>')
-				.addClass('menuBtn')
-				.text(_('github.'))
-				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
-				.appendTo(menu);
+			// $('<span>')
+			// 	.addClass('menuBtn')
+			// 	.text(_('github.'))
+			// 	.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
+			// 	.appendTo(menu);
 
 			// Register keypress handlers
 			$('body').off('keydown').keydown(Engine.keyDown);
