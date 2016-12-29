@@ -157,11 +157,11 @@
 				.click(Engine.confirmDelete)
 				.appendTo(menu);
 
-			$('<span>')
-				.addClass('menuBtn')
-				.text(_('share.'))
-				.click(Engine.share)
-				.appendTo(menu);
+			// $('<span>')
+			// 	.addClass('menuBtn')
+			// 	.text(_('share.'))
+			// 	.click(Engine.share)
+			// 	.appendTo(menu);
 
 			$('<span>')
 				.addClass('menuBtn')
@@ -179,11 +179,11 @@
 					.appendTo(menu);
 			}
 
-			// $('<span>')
-			// 	.addClass('menuBtn')
-			// 	.text(_('github.'))
-			// 	.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
-			// 	.appendTo(menu);
+			$('<span>')
+				.addClass('menuBtn')
+				.text(_('github.'))
+				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
+				.appendTo(menu);
 
 			// Register keypress handlers
 			$('body').off('keydown').keydown(Engine.keyDown);
