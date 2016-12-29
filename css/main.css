@@ -67,7 +67,7 @@ div#header {
 .menu {
 	position: fixed;
 	right: 10px;
-	bottom: 10px;
+	bottom: 110px;
 	color: #666;
 	z-index: 10;
 }
@@ -600,4 +600,16 @@ body.noMask #description {
 
 #dropMenu > div:hover {
 	text-decoration: underline;
+}
+
+#ad {
+	margin: auto;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	max-height: 100px;
+    bottom: 10px;
+    z-index: 10;
 }
