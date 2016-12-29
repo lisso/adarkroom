@@ -110,6 +110,12 @@
 				.addClass('menu')
 				.appendTo('body');
 
+			$('<span>')
+				.addClass('menuBtn')
+				.text(_('github.'))
+				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
+				.appendTo(menu);
+
 			if(typeof langs != 'undefined'){
 				var customSelect = $('<span>')
 					.addClass('customSelect')
@@ -178,12 +184,6 @@
 					.click(Engine.Dropbox.startDropbox)
 					.appendTo(menu);
 			}
-
-			$('<span>')
-				.addClass('menuBtn')
-				.text(_('github.'))
-				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
-				.appendTo(menu);
 
 			// Register keypress handlers
 			$('body').off('keydown').keydown(Engine.keyDown);
